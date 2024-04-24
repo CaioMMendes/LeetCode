@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx watch \"All Topics/50-pow.ts\""
+    "dev": "tsx watch \"All Topics/151-200/190-ReverseBits.ts\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tsx": "^4.1.4"
+    "@types/node": "^20.11.16",
+    "tsx": "^4.1.4",
+    "typescript": "^5.4.5"
   }
 }
