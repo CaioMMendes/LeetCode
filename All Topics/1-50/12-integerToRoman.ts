@@ -16,7 +16,6 @@ const intToRoman = function (num: number) {
   const numbersToConvert = splitedNumber.map((number, index) => {
     return Number(number) * (1 * 10 ** (splitedNumber.length - 1 - index));
   });
-  console.log(numbersToConvert);
 
   const numbersConverted = numbersToConvert.map((number) => {
     let num = "";
