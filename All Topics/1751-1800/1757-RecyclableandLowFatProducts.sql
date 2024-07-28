@@ -1,0 +1,4 @@
+-- Write your PostgreSQL query statement below
+
+
+SELECT PRODUCT_ID FROM PRODUCTS WHERE PRODUCTS.LOW_FATS='Y' AND PRODUCTS.RECYCLABLE='Y';
