@@ -20,7 +20,7 @@ function lengthOfLongestSubstring(s: string): number {
       }
     }
   }
-  console.log(string);
+
   return result;
 }
 

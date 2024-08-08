@@ -17,7 +17,6 @@ var numSubarrayProductLessThanK = function (nums: number[], k: number) {
     let product = 0;
     for (let j = 0; j < nums.length; j++) {
       const elementJ = nums[j];
-      console.log(elementJ);
       if (j === 0) {
         product = elementIndex * elementJ;
       } else {

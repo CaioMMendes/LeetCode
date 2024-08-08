@@ -30,14 +30,12 @@ var shiftGrid = function (grid: number[][], k: number) {
       let tempRow = (numberOfRowsChanged + i) % rows
 
       let tempColumn = (numberOfColumnsChanged + j) % columns
-      console.log("adasd", numberOfColumnsChanged + j)
       if (numberOfColumnsChanged + j > columns - 1) {
         tempRow++
       }
       if (tempRow > rows - 1) {
         tempRow %= rows
       }
-      console.log(tempRow, tempColumn)
       result[tempRow][tempColumn] = element
     }
   }

@@ -1,3 +1,6 @@
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 class Solution {
   public String kthDistinct(String[] arr, int k) {
     LinkedHashMap<String, Integer> map = new LinkedHashMap<>();

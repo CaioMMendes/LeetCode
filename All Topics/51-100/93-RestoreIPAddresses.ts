@@ -6,7 +6,6 @@ console.log("--------------------------------");
  */
 var restoreIpAddresses = function (s: string) {
   const splited = s.split("");
-  const length = s.length;
   const result: string[] = [];
 
   let numberI = "";
@@ -14,7 +13,6 @@ var restoreIpAddresses = function (s: string) {
     const elementI = splited.splice(0, 1);
     numberI += elementI;
     let numberJ = "";
-    console.log("numberI:", numberI);
 
     if (numberI === "0" || (Number(numberI) <= 255 && numberI[0] !== "0")) {
       const splitedJ = [...splited];
@@ -22,7 +20,6 @@ var restoreIpAddresses = function (s: string) {
         const elementJ = splitedJ.splice(0, 1);
         numberJ += elementJ;
         let numberK = "";
-        console.log("numberJ:", numberJ);
 
         if (numberJ === "0" || (Number(numberJ) <= 255 && numberJ[0] !== "0")) {
           const splitedK = [...splitedJ];

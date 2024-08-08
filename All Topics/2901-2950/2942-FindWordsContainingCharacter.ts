@@ -7,7 +7,7 @@ const words = ["leet", "code"],
  * @return {number[]}
  */
 var findWordsContaining = function (words: string[], x: string) {
-  const result = []
+  const result: number[] = []
 
   words.forEach((string, index) => {
     const charIndex = string.indexOf(x)
