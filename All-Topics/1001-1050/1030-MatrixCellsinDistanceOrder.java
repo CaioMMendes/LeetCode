@@ -6,16 +6,15 @@ import java.util.List;
 class Solution {
     public int[][] allCellsDistOrder(int rows, int cols, int rCenter, int cCenter) {
 
-
-     List<int[]> cells = new ArrayList()<>();
+        List<int[]> cells = new ArrayList<>();
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                cells.add(new int[]{i, j});
+                cells.add(new int[] { i, j });
             }
         }
 
-    Collections.sort(cells, new Comparator<int[]>() {
+        Collections.sort(cells, new Comparator<int[]>() {
             @Override
             public int compare(int[] a, int[] b) {
                 int dist1 = Math.abs(a[0] - rCenter) + Math.abs(a[1] - cCenter);
