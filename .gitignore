@@ -1,3 +1,6 @@
 node_modules
 /All*Topics/teste-recursividade.ts
 /All*Topics/teste.ts
+.vscode
+.env
+freeCodeCamp

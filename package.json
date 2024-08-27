@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx watch \"All Topics/151-200/190-ReverseBits.ts\""
+    "dev": "tsx watch \"All-Topics/1-50/40-CombinationSumII\""
   },
   "keywords": [],
   "author": "",

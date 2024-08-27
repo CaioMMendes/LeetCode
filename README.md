@@ -5,8 +5,8 @@
 ## 🚀 Progresso
 
 - All Topics:
-  - Easy: 251/803
-  - Medium: 44/1674
+  - Easy: 295/803
+  - Medium: 49/1674
   - Hard: 4/710
   
 ## 🙂 Perfil
