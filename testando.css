@@ -1,4 +1,4 @@
-li {
+/* li {
   direction: rtl;
   width: fit-content;
 }
@@ -10,4 +10,8 @@ body {
 
 h4 {
   color: green;
+} */
+
+.nome a {
+  text-decoration: none;
 }
