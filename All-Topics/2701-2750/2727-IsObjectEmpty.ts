@@ -4,7 +4,7 @@ const obj = { "x": 5, "y": 42 }
  * @param {Object|Array} obj
  * @return {boolean}
  */
-var isEmpty = function (obj) {
+var isEmpty = function (obj: any) {
   return Object.keys(obj).length === 0
 }
 
