@@ -9,8 +9,8 @@ var sortArray = function (nums: number[]) {
     if (array.length === 1) return array
     const [first, second] = numSplit(array)
 
-    const array1 = mergeSort(first)
-    const array2 = mergeSort(second)
+    const array1: number[] = mergeSort(first)
+    const array2: number[] = mergeSort(second)
     return merge(array1, array2)
   }
 

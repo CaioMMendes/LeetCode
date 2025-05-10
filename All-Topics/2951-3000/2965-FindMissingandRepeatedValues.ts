@@ -7,9 +7,9 @@ const grid = [
  * @param {number[][]} grid
  * @return {number[]}
  */
-var findMissingAndRepeatedValues = function (grid) {
+var findMissingAndRepeatedValues = function (grid: number[][]) {
   const result: number[] = []
-  const elements = {}
+  const elements: Record<string, boolean> = {}
   for (let i = 0; i < grid.length; i++) {
     for (let j = 0; j < grid[0].length; j++) {
       const element = grid[i][j]
