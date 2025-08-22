@@ -8,7 +8,7 @@ const  image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, color = 2
  * @param {number} color
  * @return {number[][]}
  */
-var floodFill = function(image:number, sr:number, sc:number, color:number[][]) {
+var floodFill = function(image:number[][], sr:number, sc:number, color:number) {
     const result=image
 
     const startColor=image[sr][sc]
@@ -47,4 +47,4 @@ return result
 };
 
 
-console.log(floodFill(Image,screen,screen,color))
+console.log(floodFill(image,sr,sc,color))
