@@ -21,3 +21,36 @@ var minTimeToVisitAllPoints = function (points: number[][]) {
 }
 
 console.log(minTimeToVisitAllPoints(points))
+
+//? Outra forma de resolver
+// /**
+//  * @param {number[][]} points
+//  * @return {number}
+//  */
+// var minTimeToVisitAllPoints = function(points) {
+//     let result=0
+//     let [currentX,currentY]=points[0]
+
+//     for(let i=1;i<points.length;i++){
+//         const [targetX,targetY]=points[i]
+
+//         while(currentX!==targetX || currentY!==targetY){
+//             if(targetX>currentX){
+//                 currentX++
+//             }else if(targetX<currentX){
+//                 currentX--
+//             }
+
+//             if(targetY>currentY){
+//                 currentY++
+//             }else if(targetY<currentY){
+//                 currentY--
+//             }
+//             result++
+//         }
+
+//     }
+
+//     return result
+
+// };
