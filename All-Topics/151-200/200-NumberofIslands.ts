@@ -45,3 +45,44 @@ var numIslands = function (grid: string[][]) {
 }
 
 console.log(numIslands(grid))
+
+//? Outra forma de resolver sem usar recursão
+// /**
+//  * @param {character[][]} grid
+//  * @return {number}
+//  */
+// var numIslands = function(grid) {
+
+// const visitedCoords=new Set()
+// let result=0
+// const checkList=[]
+
+//     for(let i=0;i<grid.length;i++){
+
+//         for(let j=0;j<grid[0].length;j++){
+//             const key=`${i}-${j}`
+//             if(visitedCoords.has(key) || grid[i][j]==='0')continue
+//             result++
+
+//             checkList.push([i,j])
+
+//             while(checkList.length>0){
+//                 const [i,j]=checkList.pop()
+
+//                 if(grid?.[i]?.[j]===undefined||grid[i][j]==='0' || visitedCoords.has(`${i}-${j}`))continue
+
+//                 visitedCoords.add(`${i}-${j}`)
+//                 checkList.push([i,j+1])
+//                 checkList.push([i,j-1])
+//                 checkList.push([i+1,j])
+//                 checkList.push([i-1,j])
+
+//             }
+
+//         }
+
+//     }
+
+// return result
+
+// };
