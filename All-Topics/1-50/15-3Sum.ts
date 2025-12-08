@@ -69,3 +69,46 @@ console.log(threeSum(nums))
 //   }
 // }
 // return result
+
+//? Fiz com ajuda do video do stoney code, só não consegui entender muito bem a parte das duplicatas, essa parte fiz com ajuda do gpt
+// /**
+//  * @param {number[]} nums
+//  * @return {number[][]}
+//  */
+// var threeSum = function(nums) {
+
+//     const sorted=nums.sort((a,b)=>a-b)
+//     const result=[]
+
+//     for(let i=0;i<(nums.length-2);i++){
+//         if(nums[i]>0)return result
+//         if(nums?.[i-1]===nums[i])continue
+
+//         let left=i+1
+
+//         let right=nums.length-1
+
+//         while(left<right){
+//             const leftVal=nums[left]
+//             const rightVal=nums[right]
+//             const sum = nums[i] + leftVal + rightVal
+
+//             if(sum === 0){
+//                 result.push([nums[i], leftVal, rightVal])
+//                 right--
+
+//                 // pular duplicatas
+//                 while(left < right && nums[left] === nums[left-1]) left++
+//                 while(left < right && nums[right] === nums[right+1]) right--
+//             }else if(sum<0){
+//                 left+=1
+//             }else{
+//                 right-=1
+//             }
+//         }
+
+//     }
+
+//     return result
+
+// };
