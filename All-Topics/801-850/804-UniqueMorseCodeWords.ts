@@ -5,7 +5,7 @@ const words = ["gin", "zen", "gig", "msg"]
  * @return {number}
  */
 var uniqueMorseRepresentations = function (words: string[]) {
-  const morse = {
+  const morse: Record<string, string> = {
     a: ".-",
     b: "-...",
     c: "-.-.",
