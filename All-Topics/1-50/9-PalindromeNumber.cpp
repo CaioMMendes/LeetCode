@@ -10,7 +10,7 @@ public:
         }
 
     
-    st::string stringX = std::to_string(x);
+    std::string stringX = std::to_string(x);
 
     for(int i=0;i<stringX.size();i++){
         if(stringX[i]!=stringX[stringX.size()-i-1])return false;
